@@ -25,7 +25,7 @@ class ServiceWrapper(object):
                 if isinstance(a, str):
                     argstr.append('"' + a + '"')
                 else:
-                    argstr.append(a)
+                    argstr.append(str(a))
 
             self.bridge.sendMessage("python27:self.s." + self.servicename + "." + functionname + "(" + ','.join(argstr) + ")")
             # return getattr(self.child, attr)(*args, **kw)
