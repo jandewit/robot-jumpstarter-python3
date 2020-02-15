@@ -24,11 +24,11 @@ Install py2app using:
 Download the NaoQI Python SDK and make sure your PYTHONPATH and DYLD_LIBRARY_PATH are set (see [here](http://doc.aldebaran.com/2-5/dev/python/install_guide.html))
 
 Then build the app with:
-`sudo python setup_osx.py [PATH_TO_NAOQI_LIB]`
+`python setup_osx.py [PATH_TO_NAOQI_LIB]`
 
 And replace [PATH_TO_NAOQI_LIB] with the path to the lib directory of the NaoQI SDK. For example, my [PATH_TO_NAOQI_LIB] would be /Users/jandewit/naoqi/lib
 
-Finally, there should be a command to launch the app already in your **dist** directory.
+Finally, there should be a run.command to launch the app in your **dist** directory.
 
 ## Disclaimer ##
 This software has not been thoroughly tested yet, and is provided "as is". Your contributions are greatly appreciated!
